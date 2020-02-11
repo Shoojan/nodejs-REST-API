@@ -33,3 +33,10 @@ A RESTful API using nodejs express with mongodb as NoSQL database and authentica
   <td>Install dotenv to load environment variables from .env file into process.env</td>
 </tr>
 </table>
+
+<p>
+ <b> Heroku Deployment git commands </b>
+  <li>heroku login</li>
+  <li>heroku git:remote -a [project-App-Name] </li>
+  <li>git push heroku master</li>
+</p>
