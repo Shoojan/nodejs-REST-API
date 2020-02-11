@@ -1,5 +1,0 @@
-1. npm init                 -> Initialize package.json file
-2. npm i --save-dev nodemon -> Install nodemon inside development server to let the nodejs server deploy automatically
-3. npm i --save express     -> Install express as web application framework for Node.js
-4. npm run devStart         -> Run the development server
-5. npm i --save-dev dotenv  -> Install dotenv to load environment variables from .env file into process.env
