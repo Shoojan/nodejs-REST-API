@@ -46,6 +46,11 @@ Creating API (CRUD operation) for simple model named "Employee" which shall cont
   <td>npm i --save morgan</td>
   <td>Install logging tool that works with HTTP servers.</td>
 </tr>
+<tr>
+  <td>8.</td>
+  <td>npm i --save body-parser</td>
+  <td>Install middleware module to handle HTTP POST request (parses JSON, buffer, string & URL encoded data).</td>
+</tr>
 </table>
 
 <p>
