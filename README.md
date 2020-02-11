@@ -51,6 +51,11 @@ Creating API (CRUD operation) for simple model named "Employee" which shall cont
   <td>npm i --save body-parser</td>
   <td>Install middleware module to handle HTTP POST request (parses JSON, buffer, string & URL encoded data).</td>
 </tr>
+<tr>
+  <td>9.</td>
+  <td>npm i joi</td>
+  <td>used for server side data validation.</td>
+</tr>
 </table>
 
 <p>
