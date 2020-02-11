@@ -4,7 +4,6 @@ A RESTful API using nodejs express with mongodb as NoSQL database and authentica
 
 <table>
 <th>
-  <td>S.N</td>
   <td>Code</td>
   <td>Description</td>
 </th>
