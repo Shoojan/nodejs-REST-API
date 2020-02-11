@@ -41,6 +41,11 @@ Creating API (CRUD operation) for simple model named "Employee" which shall cont
   <td>npm i --save mongoose</td>
   <td>Install ODM(Object Data Modeling) library for MongoDB and Node.js</td>
 </tr>
+<tr>
+  <td>7.</td>
+  <td>npm i --save morgan</td>
+  <td>Install logging tool that works with HTTP servers.</td>
+</tr>
 </table>
 
 <p>

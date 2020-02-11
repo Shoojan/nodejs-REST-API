@@ -10,7 +10,7 @@ router.get("/", employeeController.getAllEmployees);
 router.get("/:empId", employeeController.getEmployeeById);
 
 //add Employee
-router.post("/", employeeController.addEmployee);
+router.post("/:empId", employeeController.addEmployee);
 
 //Update Employee
 router.patch("/:empId", employeeController.updateEmployee);
