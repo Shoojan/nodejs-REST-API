@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const joi = require("joi");
 const Employee = require("../model/employee");
 
 exports.getAllEmployees = (req, res, next) => {
@@ -30,20 +31,38 @@ exports.getEmployeeById = (req, res, next) => {
 };
 
 exports.addEmployee = (req, res, next) => {
-  const employee = new Employee({
-    _id: new mongoose.Types.ObjectId(),
-    name: req.body.name,
-    position: req.body.position
+  //JOI Validation
+  const schema = joi.object().keys({
+    name: joi
+      .string()
+      .trim()
+      .required(),
+    position: joi
+      .string()
+      .trim()
+      .required()
   });
-  employee
-    .save()
-    .then(result =>
-      res.status(200).json({
-        message: "Employee " + employee.name + " added!",
-        employee: employee
-      })
-    )
-    .catch(err => res.status(500).json(err));
+
+  joi.validate(req.body, schema, (err, result) => {
+    if (err) {
+      res.status(500).json(err);
+    } else {
+      const employee = new Employee({
+        _id: new mongoose.Types.ObjectId(),
+        name: req.body.name,
+        position: req.body.position
+      });
+      employee
+        .save()
+        .then(result =>
+          res.status(200).json({
+            message: "Employee " + employee.name + " added!",
+            employee: employee
+          })
+        )
+        .catch(err => res.status(500).json(err));
+    }
+  });
 };
 
 exports.updateEmployee = (req, res, next) => {
