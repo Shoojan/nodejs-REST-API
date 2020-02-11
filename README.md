@@ -1,6 +1,10 @@
 # nodejs-REST-API
 A RESTful API using nodejs express with mongodb as NoSQL database and authenticate with JWT.
 
+<p>
+<b>Planning:</b>
+Creating API (CRUD operation) for simple model named "Employee" which shall contain fields (_id, name, position)
+</p>
 
 <table>
 <th>
@@ -32,6 +36,11 @@ A RESTful API using nodejs express with mongodb as NoSQL database and authentica
   <td>npm i --save-dev dotenv</td>
   <td>Install dotenv to load environment variables from .env file into process.env</td>
 </tr>
+<tr>
+  <td>6.</td>
+  <td>npm i --save mongoose</td>
+  <td>Install ODM(Object Data Modeling) library for MongoDB and Node.js</td>
+</tr>
 </table>
 
 <p>
@@ -40,3 +49,4 @@ A RESTful API using nodejs express with mongodb as NoSQL database and authentica
   <li>heroku git:remote -a [project-App-Name] </li>
   <li>git push heroku master</li>
 </p>
+
