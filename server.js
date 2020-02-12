@@ -9,6 +9,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 
 const employeeRoutes = require("./api/routes/employeeRoute");
+const userRoutes = require("./api/routes/userRoute");
 
 //for logging purpose
 app.use(morgan("dev"));
@@ -43,6 +44,7 @@ db.on("open", () => console.log("Connected to Mongoose ^_^"));
 
 //Set up request method based on models and routes
 app.use("/employee", employeeRoutes);
+app.use("/user", userRoutes);
 
 // Default/Home Request Mapping | Handling errors
 app.use((req, res, next) => {

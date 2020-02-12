@@ -43,7 +43,7 @@ exports.addEmployee = (req, res, next) => {
       .required()
   });
 
-  joi.validate(req.body, schema, (err, result) => {
+  joi.validate(req.body, schema, (err, response) => {
     if (err) {
       res.status(500).json(err);
     } else {

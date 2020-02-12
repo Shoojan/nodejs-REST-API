@@ -1,4 +1,5 @@
 # nodejs-REST-API
+
 A RESTful API using nodejs express with mongodb as NoSQL database and authenticate with JWT.
 
 <p>
@@ -56,6 +57,16 @@ Creating API (CRUD operation) for simple model named "Employee" which shall cont
   <td>npm i joi</td>
   <td>used for server side data validation.</td>
 </tr>
+<tr>
+  <td>10.</td>
+  <td>npm i bcrypt</td>
+  <td>used to hash and compare passwords in nodejs.</td>
+</tr>
+<tr>
+  <td>11.</td>
+  <td>npm i jsonwebtoken</td>
+  <td>used for JWT authentication.</td>
+</tr>
 </table>
 
 <p>
@@ -64,4 +75,3 @@ Creating API (CRUD operation) for simple model named "Employee" which shall cont
   <li>heroku git:remote -a [project-App-Name] </li>
   <li>git push heroku master</li>
 </p>
-
