@@ -74,4 +74,6 @@ Creating API (CRUD operation) for simple model named "Employee" which shall cont
   <li>heroku login</li>
   <li>heroku git:remote -a [project-App-Name] </li>
   <li>git push heroku master</li>
+  
+  <i>https://nodejs-rest-api-project.herokuapp.com/</i>
 </p>
